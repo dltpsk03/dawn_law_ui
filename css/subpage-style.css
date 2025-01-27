@@ -1,0 +1,219 @@
+/* 기본 변수 */
+:root {
+    --bg-color: #1e2429;
+    --panel-bg: rgba(47, 53, 66, 0.95);
+    --border-color: #384252;
+    --text-color: #e2e8f0;
+    --accent-blue: #4a90e2;
+    --accent-red: #e74c3c;
+    --accent-green: #2ecc71;
+    --accent-yellow: #f1c40f;
+    --item-bg: #2a323c;
+    --item-hover: #353e4a;
+    --selected-bg: rgba(74, 144, 226, 0.2);
+}
+
+/* 기본 리셋 및 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* 컨테이너 */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* 헤더 영역 */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* 뒤로가기 버튼 */
+.back-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+    transition: transform 0.2s;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+}
+
+/* 헤더 제목 */
+.header h1 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+/* 경로 표시 */
+.breadcrumb {
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+/* 법률 옵션 섹션 */
+.law-options {
+    background-color: var(--panel-bg);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 60px;
+    border-left: 4px solid var(--accent-blue);
+}
+
+.law-options:last-child {
+    margin-bottom: 0;
+}
+
+/* 섹션 제목 */
+.law-options h2 {
+    color: var(--accent-blue);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 법률 옵션 */
+.law-option {
+    margin-bottom: 20px;
+}
+
+.law-option:last-child {
+    margin-bottom: 0;
+}
+
+/* 라디오 버튼 숨기기 */
+.law-option input[type="radio"] {
+    display: none;
+}
+
+/* 옵션 라벨 */
+.law-option label {
+    display: block;
+    padding: 20px;
+    background-color: var(--item-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.law-option label:hover {
+    background-color: var(--item-hover);
+    transform: translateY(-2px);
+}
+
+/* 선택된 옵션 스타일 */
+.law-option input[type="radio"]:checked + label {
+    background-color: var(--selected-bg);
+    border-color: var(--accent-blue);
+}
+
+/* 옵션 제목 */
+.option-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* 옵션 설명 */
+.option-description {
+    display: block;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* 호버 효과 */
+.law-option label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.05),
+        transparent
+    );
+    transform: translateX(-100%);
+}
+
+.law-option label:hover::after {
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.law-options {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .law-options {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .law-option {
+        margin-bottom: 15px;
+    }
+
+    .option-title {
+        font-size: 1rem;
+    }
+
+    .option-description {
+        font-size: 0.85rem;
+    }
+}
+
+/* 접근성 */
+@media (prefers-reduced-motion: reduce) {
+    .law-options,
+    .law-option label,
+    .back-button {
+        animation: none;
+        transition: none;
+    }
+}

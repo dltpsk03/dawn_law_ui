@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경제법 - 법률 시스템</title>
+    <link rel="stylesheet" href="../css/subpage-style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="back-button" onclick="location.href='../index.html'">←</button>
+            <h1>경제법</h1>
+        </header>
+
+        <!-- 경제 체제 -->
+        <section id="system" class="law-options">
+            <div class="breadcrumb">경제법 > 경제 체제</div>
+            <h2>경제 체제</h2>
+
+            <div class="law-option">
+                <input type="radio" name="system" id="traditional">
+                <label for="traditional">
+                    <span class="option-title">전통주의</span>
+                    <span class="option-description">전통적인 경제 방식과 관습을 유지합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="system" id="interventionism">
+                <label for="interventionism">
+                    <span class="option-title">간섭주의</span>
+                    <span class="option-description">정부가 경제 활동에 적극적으로 개입합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="system" id="agrarianism">
+                <label for="agrarianism">
+                    <span class="option-title">농본주의</span>
+                    <span class="option-description">농업을 중심으로 경제를 운영합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="system" id="industry-ban">
+                <label for="industry-ban">
+                    <span class="option-title">공업금지</span>
+                    <span class="option-description">산업화와 공업화를 제한합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="system" id="exploitation">
+                <label for="exploitation">
+                    <span class="option-title">착취경제</span>
+                    <span class="option-description">자원과 노동력을 최대한 활용하여 이익을 추구합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="system" id="laissez-faire">
+                <label for="laissez-faire">
+                    <span class="option-title">자유방임주의</span>
+                    <span class="option-description">시장의 자율적인 운영을 보장합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="system" id="cooperative">
+                <label for="cooperative">
+                    <span class="option-title">협동소유</span>
+                    <span class="option-description">생산 수단을 공동으로 소유하고 운영합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="system" id="command">
+                <label for="command">
+                    <span class="option-title">통제경제</span>
+                    <span class="option-description">정부가 경제 전반을 직접 통제합니다.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- 무역 정책 -->
+        <section id="trade" class="law-options">
+            <div class="breadcrumb">경제법 > 무역 정책</div>
+            <h2>무역 정책</h2>
+
+            <div class="law-option">
+                <input type="radio" name="trade" id="isolation">
+                <label for="isolation">
+                    <span class="option-title">고립주의</span>
+                    <span class="option-description">외부와의 무역을 최소화하고 자급자족을 추구합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="trade" id="mercantilism">
+                <label for="mercantilism">
+                    <span class="option-title">중상주의</span>
+                    <span class="option-description">수출을 장려하고 수입을 제한하여 무역 흑자를 추구합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="trade" id="protectionism">
+                <label for="protectionism">
+                    <span class="option-title">보호무역주의</span>
+                    <span class="option-description">국내 산업 보호를 위해 무역 장벽을 설치합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="trade" id="free-trade">
+                <label for="free-trade">
+                    <span class="option-title">자유무역</span>
+                    <span class="option-description">국가 간 자유로운 무역을 추구합니다.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- 조세 정책 -->
+        <section id="tax" class="law-options">
+            <div class="breadcrumb">경제법 > 조세 정책</div>
+            <h2>조세 정책</h2>
+
+            <div class="law-option">
+                <input type="radio" name="tax" id="consumption">
+                <label for="consumption">
+                    <span class="option-title">소비 기반 조세</span>
+                    <span class="option-description">소비에 대해 세금을 부과합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="tax" id="land">
+                <label for="land">
+                    <span class="option-title">토지세</span>
+                    <span class="option-description">토지 소유에 대해 세금을 부과합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="tax" id="poll">
+                <label for="poll">
+                    <span class="option-title">인두세</span>
+                    <span class="option-description">모든 성인에게 동일한 금액의 세금을 부과합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="tax" id="proportional">
+                <label for="proportional">
+                    <span class="option-title">비례조세</span>
+                    <span class="option-description">소득에 비례하여 동일한 비율의 세금을 부과합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="tax" id="progressive">
+                <label for="progressive">
+                    <span class="option-title">누진세</span>
+                    <span class="option-description">소득이 높을수록 더 높은 비율의 세금을 부과합니다.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- 토지 개혁 -->
+        <section id="land" class="law-options">
+            <div class="breadcrumb">경제법 > 토지 개혁</div>
+            <h2>토지 개혁</h2>
+
+            <div class="law-option">
+                <input type="radio" name="land-reform" id="serfdom">
+                <label for="serfdom">
+                    <span class="option-title">농노제</span>
+                    <span class="option-description">농민들이 토지에 종속되어 있는 체제입니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="land-reform" id="tenant">
+                <label for="tenant">
+                    <span class="option-title">소작인</span>
+                    <span class="option-description">농민들이 지주의 토지를 빌려 경작합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="land-reform" id="commercial">
+                <label for="commercial">
+                    <span class="option-title">상업적 농업</span>
+                    <span class="option-description">농업을 영리 목적의 사업으로 운영합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="land-reform" id="commons">
+                <label for="commons">
+                    <span class="option-title">공유지 불하</span>
+                    <span class="option-description">공유지를 개인에게 판매하여 사유화합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="land-reform" id="collective">
+                <label for="collective">
+                    <span class="option-title">집단 농업</span>
+                    <span class="option-description">토지를 공동으로 소유하고 경작합니다.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- 식민화 -->
+        <section id="colonization" class="law-options">
+            <div class="breadcrumb">경제법 > 식민화</div>
+            <h2>식민화</h2>
+
+            <div class="law-option">
+                <input type="radio" name="colonization" id="no-colonial">
+                <label for="no-colonial">
+                    <span class="option-title">식민부 없음</span>
+                    <span class="option-description">식민지 정책을 추진하지 않습니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="colonization" id="frontier">
+                <label for="frontier">
+                    <span class="option-title">개척지 식민화</span>
+                    <span class="option-description">미개발 지역을 개척하여 발전시킵니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="colonization" id="settlement">
+                <label for="settlement">
+                    <span class="option-title">식민지 이주</span>
+                    <span class="option-description">자국민을 식민지로 이주시켜 정착을 장려합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="colonization" id="exploitation-colony">
+                <label for="exploitation-colony">
+                    <span class="option-title">식민지 수탈</span>
+                    <span class="option-description">식민지의 자원을 본국의 이익을 위해 활용합니다.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- 경찰 조직 -->
+        <section id="police" class="law-options">
+            <div class="breadcrumb">경제법 > 경찰 조직</div>
+            <h2>경찰 조직</h2>
+
+            <div class="law-option">
+                <input type="radio" name="police" id="no-police">
+                <label for="no-police">
+                    <span class="option-title">경찰 없음</span>
+                    <span class="option-description">중앙집권적 경찰 조직이 존재하지 않습니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="police" id="local-police">
+                <label for="local-police">
+                    <span class="option-title">자치 경찰</span>
+                    <span class="option-description">지역 단위로 경찰을 운영합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="police" id="national-police">
+                <label for="national-police">
+                    <span class="option-title">국가 경찰</span>
+                    <span class="option-description">중앙정부가 통제하는 경찰 조직을 운영합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="police" id="military-police">
+                <label for="military-police">
+                    <span class="option-title">군사 경찰</span>
+                    <span class="option-description">군대가 경찰 업무를 수행합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="police" id="elected-police">
+                <label for="elected-police">
+                    <span class="option-title">선출직 경찰</span>
+                    <span class="option-description">경찰 지도부를 선거로 선출합니다.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- 의무 교육 체제 -->
+        <section id="mandatory-education" class="law-options">
+            <div class="breadcrumb">경제법 > 의무 교육 체제</div>
+            <h2>의무 교육 체제</h2>
+
+            <div class="law-option">
+                <input type="radio" name="education" id="no-schools">
+                <label for="no-schools">
+                    <span class="option-title">학교 철폐</span>
+                    <span class="option-description">공식적인 교육 기관을 운영하지 않습니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="education" id="religious-schools">
+                <label for="religious-schools">
+                    <span class="option-title">종교 학교</span>
+                    <span class="option-description">종교 기관이 교육을 담당합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="education" id="military-schools">
+                <label for="military-schools">
+                    <span class="option-title">군사 학교</span>
+                    <span class="option-description">군사 교육을 중심으로 한 교육을 실시합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="education" id="private-schools">
+                <label for="private-schools">
+                    <span class="option-title">사립 학교</span>
+                    <span class="option-description">민간이 운영하는 교육 기관을 중심으로 합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="education" id="public-schools">
+                <label for="public-schools">
+                    <span class="option-title">공립 학교</span>
+                    <span class="option-description">국가가 운영하는 공교육 시스템을 도입합니다.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- 고등 교육 체제 -->
+        <section id="higher-education" class="law-options">
+            <div class="breadcrumb">경제법 > 고등 교육 체제</div>
+            <h2>고등 교육 체제</h2>
+
+            <div class="law-option">
+                <input type="radio" name="higher-education" id="no-higher">
+                <label for="no-higher">
+                    <span class="option-title">고등 교육 없음</span>
+                    <span class="option-description">고등 교육 기관을 운영하지 않습니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="higher-education" id="college">
+                <label for="college">
+                    <span class="option-title">단과 대학 설립</span>
+                    <span class="option-description">특정 분야의 전문 교육 기관을 설립합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="higher-education" id="technical">
+                <label for="technical">
+                    <span class="option-title">전문 대학 설립</span>
+                    <span class="option-description">실용적인 기술 교육에 중점을 둔 대학을 설립합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="higher-education" id="university">
+                <label for="university">
+                    <span class="option-title">종합 대학 설립</span>
+                    <span class="option-description">다양한 학문 분야를 포괄하는 대학을 설립합니다.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- 보건 체제 -->
+        <section id="health" class="law-options">
+            <div class="breadcrumb">경제법 > 보건 체제</div>
+            <h2>보건 체제</h2>
+
+            <div class="law-option">
+                <input type="radio" name="health" id="no-health">
+                <label for="no-health">
+                    <span class="option-title">보건체제 없음</span>
+                    <span class="option-description">공식적인 보건 시스템을 운영하지 않습니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="health" id="charity">
+                <label for="charity">
+                    <span class="option-title">자선 병원</span>
+                    <span class="option-description">자선 단체가 운영하는 의료 시설을 중심으로 합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="health" id="private-insurance">
+                <label for="private-insurance">
+                    <span class="option-title">사립 건강 보험</span>
+                    <span class="option-description">민간 보험을 통한 의료 서비스를 제공합니다.</span>
+                </label>
+            </div>
+
+            <div class="law-option">
+                <input type="radio" name="health" id="national-health">
+                <label for="national-health">
+                    <span class="option-title">국립 건강 보험</span>
+                    <span class="option-description">국가가 운영하는 보편적 의료 보험 체계를 도입합니다.</span>
+                </label>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
